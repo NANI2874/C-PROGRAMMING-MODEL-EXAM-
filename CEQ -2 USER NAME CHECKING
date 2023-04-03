@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char username[50], confirm_username[50];
+    int valid;
+
+    printf("Enter username: ");
+    scanf("%s", username);
+
+    printf("Confirm username: ");
+    scanf("%s", confirm_username);
+
+    valid = strcmp(username, confirm_username);
+
+    if(valid == 0) {
+        printf("Username is valid.\n");
+    }
+    else {
+        printf("Username is invalid.\n");
+    }
